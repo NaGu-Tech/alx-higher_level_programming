@@ -28,7 +28,7 @@ class Student:
         self.first_name = first_name
         self.last_name = last_name
         self.age = age
-    
+
     def to_json(self, attrs=None):
         """It retrieves a dictionary representation of a Student instance
 
@@ -36,7 +36,7 @@ class Student:
             - attrs: This is the list of the attribute
             Returns: the dict representation of the instance.
         """
-        
+
         my_dict = dict()
         if type(attrs) is list and all(type(x) is str for x in attrs):
             for x in attrs:

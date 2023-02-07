@@ -15,5 +15,4 @@ def append_write(filename="", text=""):
     """
 
     with open(filename, 'a+') as f:
-        return f.write(text)
-        
+	return f.write(text)

@@ -7,7 +7,7 @@ def read_file(filename=""):
 
     Args:
         - filename: this is the file to be read
-    """   
+	"""
 
     with open(filename) as f:
         read_data = f.read()
