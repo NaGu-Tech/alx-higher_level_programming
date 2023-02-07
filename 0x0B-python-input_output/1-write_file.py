@@ -1,12 +1,15 @@
 #!/usr/bin/python3
 # 1-write_file.py
-"""Defines a text file line-counting function."""
+"""This function writes a string to a text file and returns the number of
+characters written."""
 
 
 def write_file(filename="", text=""):
-    """Return the number of lines in a text file."""
-    lines = 0
-    with open(filename) as f:
-        for line in f:
-            lines += 1
-    return lines
+    """This function writes astring to a text file
+    Args:
+    	-filename: the name of the file that is to be write to
+	-text: the string to be added to the file
+	"""
+
+    with open(filename, 'w+') as f:
+    return f.write(text)
